@@ -626,13 +626,6 @@ body {
     height: 130px;
 }
 
-#building-d {
-    top: 360px;
-    right: 175px;
-    width: 90px;
-    height: 90px;
-}
-
 #building-e {
     top: 550px;
     right: 175px;
@@ -679,12 +672,6 @@ body {
     top: 425px;
     left: 205px;
     animation-delay: 0.8s;
-}
-
-.marker[data-building="d"] {
-    top: 405px;
-    left: 380px;
-    animation-delay: 1.2s;
 }
 
 .marker[data-building="e"] {
@@ -861,11 +848,6 @@ body {
 .legend-color.qad {
     background-color: rgba(100, 200, 255, 0.4);
     border: 1px solid rgb(100, 200, 255);
-}
-
-.legend-color.facilities {
-    background-color: rgba(180, 255, 100, 0.4);
-    border: 1px solid rgb(180, 255, 100);
 }
 
 .legend-color.admin {
