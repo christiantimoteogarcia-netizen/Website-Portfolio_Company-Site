@@ -309,10 +309,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 spotlightX = '190px';
                 spotlightY = '440px';
                 break;
-            case 'd':
-                spotlightX = '370px';
-                spotlightY = '420px';
-                break;
             case 'e':
                 spotlightX = '350px';
                 spotlightY = '565px';
@@ -338,9 +334,9 @@ document.addEventListener('DOMContentLoaded', function() {
     document.addEventListener('keydown', function(e) {
         if (e.key === 'Escape') {
             closeActivePanel();
-        } else if (e.key >= '1' && e.key <= '5') {
+        } else if (e.key >= '1' && e.key <= '4') {
             const buildingIndex = parseInt(e.key) - 1;
-            const buildings = ['a', 'b', 'c', 'd', 'e'];
+            const buildings = ['a', 'b', 'c', 'e'];
             if (buildingIndex < buildings.length) {
                 toggleBuilding(buildings[buildingIndex]);
             }
@@ -422,7 +418,7 @@ document.addEventListener('DOMContentLoaded', function() {
     animateMapLoad();
     
     function animateMapLoad() {
-        const buildings = ['a', 'b', 'c', 'd', 'e'];
+        const buildings = ['a', 'b', 'c', 'e'];
         
         buildings.forEach((building, index) => {
             setTimeout(() => {
@@ -467,4 +463,3 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 });
-
